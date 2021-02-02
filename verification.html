@@ -1,0 +1,316 @@
+<html>
+
+<head>
+    <title>VERIFICATION</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="jquery.js"></script>
+    <script src="javascript.js"></script>
+
+    <style>
+        nav {
+            margin-top: 1px;
+            /* position: relative; */
+        }
+
+        .logo {
+            margin-left: 15px;
+            margin-top: -25px;
+
+        }
+
+
+        p {
+            font-size:15px;
+            margin-left: 25px;
+            margin-top: -15px;
+            color: #A6A3A3;
+        }
+
+        .documents {
+            height: 750px;
+            width: 1200px;
+            border: 5px solid black;
+            border-radius: 10px;
+            margin-left: 200px;
+            box-shadow:1px 2px 5px 2px grey;
+}
+        .head{
+            /* border:2px solid black; */
+            margin-left: 1200px;
+            padding:45px;
+            margin-top:-130px;
+            padding-right: 20px;
+            display: flex;
+            
+        }
+    select {
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    
+}
+        
+
+        .head a {
+            
+            list-style-type: none;
+            justify-content: space-between;
+            padding:5px;
+            color:black;
+            font-weight: bold;
+            text-decoration: none;
+            
+            
+        }
+
+        .vl {
+            border: 1px solid black;
+            height: 600px;
+            /* margin-top: -550px; */
+            margin-left: 90px;
+        }
+
+        h6 {
+            color: skyblue;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .footer {
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 30%;
+            margin-top: 15%;
+            background-color: #A6A3A3;
+        }
+
+        #foot {
+            text-align: center;
+            padding: 100px;
+            letter-spacing: 2px;
+            color: black;
+            font-size: 15px;
+            font-style: normal;
+        }
+
+        .search {
+            margin-left: 50px;
+            margin-top: 30px;
+            border-radius: 2px;
+
+        }
+
+        .subcontainer {
+            display: flex;
+        }
+
+        .front {
+            border: 2px solid gray;
+            height: 200px;
+            width: 480px;
+            border-radius: 10px;
+            margin-left: 40px;
+        }
+
+        #frontpic {
+            padding-top: 25px;
+            margin-left: 200px;
+            text-decoration: none;
+            color: grey;
+        }
+
+        .back {
+            border: 2px solid gray;
+            height: 200px;
+            width: 480px;
+            border-radius: 10px;
+            margin-left: 40px;
+        }
+
+        #backpic {
+            padding-top: 25px;
+            margin-left: 200px;
+            text-decoration: none;
+            color: grey;
+        }
+
+        .selfie {
+            width: 400px;
+            height: 450px;
+            margin-left: 80px;
+        }
+
+        #picid {
+            margin-top: -2px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 18px;
+            color: black;
+        }
+
+        .picture {
+            border: 2px solid gray;
+            height: 270px;
+            width: 400px;
+            margin-left: 85px;
+            margin-top: -340px;
+
+        }
+
+        
+        #upload {
+            margin-left: 150px;
+            width: 100px;
+            border-radius: 5px;
+
+            
+        }
+         
+
+        /* .button {
+            border-radius: 5px;
+        } */
+        .button{
+    
+    background-color:orange; 
+    border:1px solid;
+    border-radius: 6px;
+    font-weight: bold;
+        }
+        .home{
+            margin-right:10px;
+        }
+        .company{
+            margin-left:10px;
+            
+            
+        }
+        #user{
+            margin-left:110px;
+        }
+        #fafaid{
+            margin-left:15px;
+        }
+
+    
+    </style>
+</head>
+
+<body>
+    <br>
+    <div class="nav">
+        <div class="logo" id="logoid">
+            <img src="logo.png" height="85px" width="192px">
+            <p style="letter-spacing: 4px;">BUILD WITH US</p>
+        </div>
+        <div class="head">
+            <!-- <ul> -->
+                <a href="" class="home">HOME</a>
+                <form>
+                <select id="company" class="form-control" >
+                    <option value="select">COMPANY</option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+
+                </select>
+            </form>
+
+
+                <a href=""  > <i class="fa fa-user fa-10x" id="fafaid" aria-hidden="true"
+                        style="color: black; font-size: 30px;"></i></a>
+
+            <!-- </ul> -->
+        </div>
+    </div><br><br>
+    <div class="documents"><br>
+        <h6>UPLOAD DOCUMENTS</h4><br><br>
+            <div class="subcontainer">
+                <div class="child1">
+                    <div class="search">
+                        <form>
+                            <select id="selectdocument" onchange="selectdocs()" class="form-control" style="width:95%">
+                                <option value="select">Select</option>
+                                <option value="aadharcard">Aadhar Card</option>
+                                <option value="pancard">Pan Card</option>
+                                <option value="voterid">VoterId</option>
+
+                            </select>
+                        </form>
+                    </div><br>
+                    <div class="front">
+                        <a href="" id="frontpic">--FRONT--</a>
+                    </div><br>
+                    <div class="back">
+                        <a href="" id="backpic">--BACK--</a>
+                    </div>
+                </div>
+
+                <div class="vl">
+
+                </div>
+                <div class="child2">
+                    <div class="selfie">
+                        <p id="picid">Upload a selfie!</p>
+
+                    </div>
+                    <div class="picture">
+                        <i class="fa fa-user" id="user" aria-hidden="true" style="font-size:230px;"></i><br>
+                        <button class="button1" id="upload">UPLOAD<i class="fa fa-upload"
+                            aria-hidden="true"></i></button>
+
+
+
+                    </div>
+                    <br><br>
+                    <div class="row">
+                        <div class="col-sm-5"></div>
+                        <div class="col-sm-4">
+                            <button class="button" data-toggle="modal" data-target="#mymodal"
+                                style="margin-left:25px">SUBMIT</button>
+                        </div>
+                        <div class="col-sm-3"></div>
+                    </div>
+                    <div class="modal" id="mymodal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <div class="row">
+                                        <div class="col-sm-9"></div>
+                                        <div class="col-sm-2">
+                                            <i style="font-size:50px;color:lime;margin-left:50px"
+                                                class="fa">&#xf058;</i>
+
+                                        </div>
+                                        <div class="col-sm-2"></div>
+                                    </div>
+                                </div>
+                                <div class="modal-body">
+                                    <p style="font-size: 20px;">Thanks ! check more in profile for verification status.<br>And be ready you are
+                                        almost done</p>
+                                    <!-- <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#mymodal" style="text-align: center;">CLOSE</button>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="footer">
+        <p id="foot">About Us|Terms & Conditions|Privacy Policy<br>Copyrights.All rights reserved.</p>
+
+    </div>
+</body>
+
+</html>
