@@ -1,0 +1,28 @@
+var users=[
+
+{
+    name:"ravi"
+    address:amalapuram               
+   
+}
+{
+   name:"santosh"
+   address:"guntur
+
+
+}
+{
+
+  name:"nisshan"
+  address:vizyanagarm
+
+}
+
+ {
+ name:"sindhu"
+  address:"Sidpetta"
+
+ }
+
+
+]
